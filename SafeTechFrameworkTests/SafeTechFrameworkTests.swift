@@ -10,9 +10,9 @@ import XCTest
 
 final class SafeTechFrameworkTests: XCTestCase {
     func testExample() async throws {
-        DispatchQueue.global().sync {
+        
             CoreDataManager.shared.deleteall()
-        }
+        
         let inputStrings = (0..<100).map { _ in UUID().uuidString }
         for inputString in inputStrings {
             try? await Cryptor.store(string: inputString)

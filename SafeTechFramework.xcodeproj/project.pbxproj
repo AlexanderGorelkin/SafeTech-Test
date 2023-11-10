@@ -13,10 +13,12 @@
 		11667F752AFD81C6006435CB /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11667F732AFD81C6006435CB /* Cryptor.swift */; };
 		11667F7B2AFD81FC006435CB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11667F7A2AFD81FC006435CB /* CoreDataManager.swift */; };
 		11667F7E2AFD850E006435CB /* SafeTechFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11667F682AFD8069006435CB /* SafeTechFrameworkTests.swift */; };
-		116802C22AFE1FA700AAC415 /* CryptorContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 116802C02AFE1FA700AAC415 /* CryptorContainer.xcdatamodeld */; };
-		11B0648B2AFE2E6A006AE1E8 /* CryptorContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 116802C02AFE1FA700AAC415 /* CryptorContainer.xcdatamodeld */; };
+		116802C22AFE1FA700AAC415 /* CryptorContainer2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 116802C02AFE1FA700AAC415 /* CryptorContainer2.xcdatamodeld */; };
+		11B0648B2AFE2E6A006AE1E8 /* CryptorContainer2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 116802C02AFE1FA700AAC415 /* CryptorContainer2.xcdatamodeld */; };
 		11B0648C2AFE2E6D006AE1E8 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11667F7A2AFD81FC006435CB /* CoreDataManager.swift */; };
 		11B064902AFE3C5C006AE1E8 /* NSManagedObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B0648F2AFE3C5C006AE1E8 /* NSManagedObject+Extension.swift */; };
+		11B064922AFE931E006AE1E8 /* AsymmetricCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B064912AFE931E006AE1E8 /* AsymmetricCrypto.swift */; };
+		11B064932AFE9D5B006AE1E8 /* AsymmetricCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B064912AFE931E006AE1E8 /* AsymmetricCrypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,7 @@
 		11667F7A2AFD81FC006435CB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		116802C12AFE1FA700AAC415 /* CryptorContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CryptorContainer.xcdatamodel; sourceTree = "<group>"; };
 		11B0648F2AFE3C5C006AE1E8 /* NSManagedObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extension.swift"; sourceTree = "<group>"; };
+		11B064912AFE931E006AE1E8 /* AsymmetricCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsymmetricCrypto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,9 @@
 				11667F5E2AFD8069006435CB /* SafeTechFramework.h */,
 				11667F732AFD81C6006435CB /* Cryptor.swift */,
 				11667F7A2AFD81FC006435CB /* CoreDataManager.swift */,
-				116802C02AFE1FA700AAC415 /* CryptorContainer.xcdatamodeld */,
+				116802C02AFE1FA700AAC415 /* CryptorContainer2.xcdatamodeld */,
 				11B0648F2AFE3C5C006AE1E8 /* NSManagedObject+Extension.swift */,
+				11B064912AFE931E006AE1E8 /* AsymmetricCrypto.swift */,
 			);
 			path = SafeTechFramework;
 			sourceTree = "<group>";
@@ -207,10 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				116802C22AFE1FA700AAC415 /* CryptorContainer.xcdatamodeld in Sources */,
+				116802C22AFE1FA700AAC415 /* CryptorContainer2.xcdatamodeld in Sources */,
 				11667F7B2AFD81FC006435CB /* CoreDataManager.swift in Sources */,
 				11667F742AFD81C6006435CB /* Cryptor.swift in Sources */,
 				11B064902AFE3C5C006AE1E8 /* NSManagedObject+Extension.swift in Sources */,
+				11B064922AFE931E006AE1E8 /* AsymmetricCrypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,10 +223,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B0648B2AFE2E6A006AE1E8 /* CryptorContainer.xcdatamodeld in Sources */,
+				11B0648B2AFE2E6A006AE1E8 /* CryptorContainer2.xcdatamodeld in Sources */,
 				11667F752AFD81C6006435CB /* Cryptor.swift in Sources */,
 				11B0648C2AFE2E6D006AE1E8 /* CoreDataManager.swift in Sources */,
 				11667F7E2AFD850E006435CB /* SafeTechFrameworkTests.swift in Sources */,
+				11B064932AFE9D5B006AE1E8 /* AsymmetricCrypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,13 +499,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		116802C02AFE1FA700AAC415 /* CryptorContainer.xcdatamodeld */ = {
+		116802C02AFE1FA700AAC415 /* CryptorContainer2.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				116802C12AFE1FA700AAC415 /* CryptorContainer.xcdatamodel */,
 			);
 			currentVersion = 116802C12AFE1FA700AAC415 /* CryptorContainer.xcdatamodel */;
-			path = CryptorContainer.xcdatamodeld;
+			path = CryptorContainer2.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

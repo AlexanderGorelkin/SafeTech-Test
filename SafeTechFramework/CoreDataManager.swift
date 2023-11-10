@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import CryptoKit
 
 class PersistentContainer: NSPersistentContainer { }
 
@@ -16,7 +17,7 @@ final class CoreDataManager {
     private let entityName: String = "CryptorEntity"
     var savedEntities: [CryptorEntity] = []
     private lazy var container: PersistentContainer = {
-        let result = PersistentContainer(name: "CryptorContainer")
+        let result = PersistentContainer(name: "CryptorContainer2")
         result.loadPersistentStores { (storeDescription, error) in
             if let error = error {
                 print(error.localizedDescription)
@@ -38,7 +39,7 @@ final class CoreDataManager {
     }
     
     // MARK:  PUBLIC
-    func updatePortfolio(dataString: String?) {
+    func updatePortfolio(dataString: Data?) {
         guard let dataString = dataString else { return }
        
         let entity = CryptorEntity(using: container.viewContext)
