@@ -46,6 +46,9 @@ class AsymmetricCrypto {
         
         if privateKeyLoaded == nil || publicKeyLoaded == nil {
             generateKeys()
+        } else {
+            privateKey = privateKeyLoaded
+            publicKey = publicKeyLoaded
         }
     }
     
@@ -101,9 +104,9 @@ class KeychainHelper {
         let status = SecItemCopyMatching(getquery as CFDictionary, &result)
         if status == errSecSuccess {
             resultData = result as! SecKey
-            return resultData!
+            return resultData
         } else {
-            return resultData!
+            return resultData
         }
     }
 }
